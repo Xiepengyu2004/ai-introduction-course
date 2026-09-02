@@ -171,6 +171,9 @@ function HomePage({ records }: { records: CourseRecord[] }) {
 function MarkdownPage({ record }: { record: CourseRecord }) {
   const meta = sectionMeta[record.section];
   const html = useMemo(() => DOMPurify.sanitize(String(marked.parse(record.content, { async: false, gfm: true }))), [record.content]);
+  const pdfFiles = record.pdfs?.length
+    ? record.pdfs
+    : record.pdfUrl ? [{ url: record.pdfUrl, label: record.pdfLabel ?? `${record.title} PDF` }] : [];
   return <article className="markdown-page">
     <header className={`document-header tone-${meta.tone}`}><p className="eyebrow">{meta.eyebrow} · {meta.label}</p><h1>{record.title}</h1><p>{record.summary}</p>
       <div className="document-meta">
@@ -180,10 +183,13 @@ function MarkdownPage({ record }: { record: CourseRecord }) {
         {record.externalUrl && <a href={record.externalUrl} target="_blank" rel="noreferrer">外部入口 <ExternalLink size={14} /></a>}
       </div>
     </header>
-    {record.pdfUrl && <section className="download-card">
+    {pdfFiles.length > 0 && <section className="download-card multi-download-card">
       <div className="download-icon"><FileText size={24} /></div>
-      <div><p className="eyebrow">PDF MATERIAL</p><strong>{record.pdfLabel ?? `${record.title} PDF`}</strong><span>点击下载课程资料，可保存后离线阅读。</span></div>
-      <a href={assetUrl(record.pdfUrl)} download target="_blank" rel="noreferrer"><Download size={17} /> 下载 PDF</a>
+      <div className="download-content"><p className="eyebrow">PDF MATERIALS</p><strong>课程 PDF 资料</strong><span>共 {pdfFiles.length} 个文件，可分别下载并离线阅读。</span>
+        <div className="download-list">{pdfFiles.map((file) =>
+          <a href={assetUrl(file.url)} download target="_blank" rel="noreferrer" key={file.url}><FileText size={15} /><span>{file.label}</span><Download size={16} /></a>
+        )}</div>
+      </div>
     </section>}
     {record.zipUrl && <section className="download-card package-card">
       <div className="download-icon"><Archive size={24} /></div>

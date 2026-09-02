@@ -14,6 +14,7 @@ export interface CourseRecord {
   externalUrl: string | null;
   pdfUrl: string | null;
   pdfLabel: string | null;
+  pdfs: Array<{ url: string; label: string }>;
   zipUrl: string | null;
   zipLabel: string | null;
   content: string;

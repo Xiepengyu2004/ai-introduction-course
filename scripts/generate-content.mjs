@@ -32,6 +32,16 @@ for (const file of files) {
   const { data, content } = matter(raw);
   if (!data.title) throw new Error(`Missing title in ${relative}`);
 
+  const pdfs = Array.isArray(data.pdfs)
+    ? data.pdfs.map((item, index) => {
+        if (!item?.url) throw new Error(`Missing pdfs[${index}].url in ${relative}`);
+        return {
+          url: String(item.url),
+          label: String(item.label ?? `PDF 资料 ${index + 1}`),
+        };
+      })
+    : [];
+
   records.push({
     id: `${section}/${slug}`,
     section,
@@ -46,6 +56,7 @@ for (const file of files) {
     externalUrl: data.externalUrl ? String(data.externalUrl) : null,
     pdfUrl: data.pdfUrl ? String(data.pdfUrl) : null,
     pdfLabel: data.pdfLabel ? String(data.pdfLabel) : null,
+    pdfs,
     zipUrl: data.zipUrl ? String(data.zipUrl) : null,
     zipLabel: data.zipLabel ? String(data.zipLabel) : null,
     content,

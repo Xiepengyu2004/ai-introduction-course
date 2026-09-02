@@ -68,6 +68,20 @@ pdfLabel: 第一章课程讲义（PDF）
 
 网页会自动显示“下载 PDF”卡片。`pdfLabel` 可以省略；文件名建议只使用中文、英文、数字、短横线和下划线。
 
+同一篇文档需要提供多个 PDF 时，请使用 `pdfs` 列表，它们会显示在同一个下载卡片中：
+
+```yaml
+pdfs:
+  - url: files/docs/第一次实验指导.pdf
+    label: 第一次实验指导书
+  - url: files/docs/第一次实验补充材料.pdf
+    label: 第一次实验补充材料
+  - url: files/docs/数据集说明.pdf
+    label: 数据集说明
+```
+
+不要重复填写多个 `pdfUrl`，因为 YAML 的同名字段可能只保留最后一个。旧的单文件 `pdfUrl/pdfLabel` 写法仍然兼容。
+
 也可以链接已经放在其他网站上的 PDF：
 
 ```yaml
