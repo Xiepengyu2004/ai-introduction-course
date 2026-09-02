@@ -35,17 +35,18 @@ updated: 2026-09-12
 
 只有 `title` 是必填项。`order` 越小，在导航中越靠前。
 
-## 作业 DDL
+## 实验与作业的双 DDL
 
-作业 Markdown 可增加以下字段：
+实验或作业 Markdown 可设置 Soft DDL 和 Hard DDL：
 
 ```yaml
-deadline: 2026-10-18T23:59:00+08:00
+softDeadline: 2026-10-16T23:59:00+08:00
+hardDeadline: 2026-10-18T23:59:00+08:00
 points: 100
 status: 进行中
 ```
 
-主页会自动选择尚未截止、时间最近的作业显示倒计时，并在“作业日历”列出全部作业。
+`softDeadline` 用于奖励提前提交，`hardDeadline` 是最终截止时间。主页会同时展示两个时间，但倒计时只以 `hardDeadline` 为准，并在作业日历中列出实验和作业。原有的 `deadline` 字段仍可使用，会被视为 Hard DDL。
 
 ## 外部入口
 

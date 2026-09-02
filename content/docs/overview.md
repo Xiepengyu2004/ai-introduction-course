@@ -1,5 +1,5 @@
 ---
-title: 课程导览
+title: 课程介绍
 summary: 了解课程目标、学习路径、成绩组成与推荐学习方式。
 order: 1
 updated: 2026-09-02

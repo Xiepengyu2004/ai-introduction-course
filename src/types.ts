@@ -9,6 +9,8 @@ export interface CourseRecord {
   order: number;
   updated: string | null;
   deadline: string | null;
+  softDeadline: string | null;
+  hardDeadline: string | null;
   points: number | null;
   status: string | null;
   externalUrl: string | null;

@@ -82,6 +82,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .deadline-card { position: relative; display: grid; grid-template-columns: minmax(240px, 1fr) auto 40px; align-items: center; gap: 24px; margin-top: 20px; padding: 22px 28px; border: 1px solid #d7dedb; border-radius: 16px; background: var(--paper); box-shadow: 0 8px 30px rgba(18,53,74,.04); }
 .deadline-copy { display: flex; align-items: center; gap: 15px; }.deadline-copy h2 { margin: 0; font-size: 17px; }.deadline-copy p:last-child { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+.dual-deadline-summary { display: flex; flex-wrap: wrap; gap: 7px 14px; margin-top: 6px; }.dual-deadline-summary span { color: var(--muted); font-size: 10px; }.dual-deadline-summary b { margin-right: 5px; color: var(--teal); font-size: 9px; text-transform: uppercase; }
 .deadline-icon { display: grid; place-items: center; width: 46px; height: 46px; color: #9b6412; border-radius: 12px; background: #fae6bd; }
 .countdown { display: flex; align-items: center; gap: 5px; }.countdown-unit { display: flex; align-items: baseline; gap: 3px; padding: 8px 10px; border-radius: 8px; background: #eef2ef; }
 .countdown-unit strong { font: 700 19px 'Space Grotesk'; }.countdown-unit small { color: var(--muted); font-size: 10px; }

@@ -51,6 +51,8 @@ for (const file of files) {
     order: Number(data.order ?? 999),
     updated: data.updated ? String(data.updated) : null,
     deadline: data.deadline ? String(data.deadline) : null,
+    softDeadline: data.softDeadline ? String(data.softDeadline) : null,
+    hardDeadline: data.hardDeadline ? String(data.hardDeadline) : null,
     points: data.points == null ? null : Number(data.points),
     status: data.status ? String(data.status) : null,
     externalUrl: data.externalUrl ? String(data.externalUrl) : null,

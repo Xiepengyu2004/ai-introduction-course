@@ -30,6 +30,10 @@ function useHashRoute() {
 
 function routeFor(record: CourseRecord) { return `#/${record.id}`; }
 
+function hardDeadlineOf(record: CourseRecord) {
+  return record.hardDeadline ?? record.deadline;
+}
+
 function assetUrl(value: string) {
   if (/^https?:\/\//i.test(value)) return value;
   return `${import.meta.env.BASE_URL}${value.replace(/^\.?\//, '')}`;
@@ -110,9 +114,11 @@ function Sidebar({ records, open, onClose }: { records: CourseRecord[]; open: bo
 
 function HomePage({ records }: { records: CourseRecord[] }) {
   const [now] = useState(() => Date.now());
-  const assignments = records.filter((record) => record.section === 'assignments');
-  const nextAssignment = assignments.filter((r) => r.deadline && new Date(r.deadline).getTime() > now)
-    .sort((a, b) => new Date(a.deadline!).getTime() - new Date(b.deadline!).getTime())[0];
+  const deadlineRecords = records.filter((record) =>
+    (record.section === 'assignments' || record.section === 'labs') && hardDeadlineOf(record));
+  const nextAssignment = deadlineRecords.filter((r) => new Date(hardDeadlineOf(r)!).getTime() > now)
+    .sort((a, b) => new Date(hardDeadlineOf(a)!).getTime() - new Date(hardDeadlineOf(b)!).getTime())[0];
+  const nextHardDeadline = nextAssignment ? hardDeadlineOf(nextAssignment) : null;
   const firstDoc = records.find((record) => record.section === 'docs');
   const firstLab = records.find((record) => record.section === 'labs');
   return <div className="home-page">
@@ -133,9 +139,12 @@ function HomePage({ records }: { records: CourseRecord[] }) {
     <section className="deadline-card">
       <div className="deadline-copy"><span className="deadline-icon"><Clock3 size={22} /></span><div>
         <p className="eyebrow">NEXT DEADLINE</p><h2>{nextAssignment?.title ?? '近期暂无截止任务'}</h2>
-        <p>{nextAssignment?.deadline ? `${formatDate(nextAssignment.deadline, true)} 截止` : '新的作业安排将在这里自动显示'}</p>
+        {nextAssignment ? <div className="dual-deadline-summary">
+          {nextAssignment.softDeadline && <span><b>Soft DDL</b>{formatDate(nextAssignment.softDeadline, true)}</span>}
+          {nextHardDeadline && <span><b>Hard DDL</b>{formatDate(nextHardDeadline, true)}</span>}
+        </div> : <p>新的实验或作业安排将在这里自动显示</p>}
       </div></div>
-      {nextAssignment?.deadline ? <Countdown deadline={nextAssignment.deadline} /> : <span className="no-deadline"><TimerReset size={18} /> 可以安心学习</span>}
+      {nextHardDeadline ? <Countdown deadline={nextHardDeadline} /> : <span className="no-deadline"><TimerReset size={18} /> 可以安心学习</span>}
       {nextAssignment && <a className="round-link" href={routeFor(nextAssignment)} aria-label="查看作业"><ChevronRight size={20} /></a>}
     </section>
     <section className="section-block">
@@ -157,10 +166,10 @@ function HomePage({ records }: { records: CourseRecord[] }) {
         </a>)}</div>
       </div>
       <div className="content-panel schedule-panel"><div className="panel-heading"><div><CalendarDays size={19} /><h2>作业日历</h2></div></div>
-        {assignments.length ? assignments.map((record) => <a href={routeFor(record)} className="schedule-item" key={record.id} aria-label={`查看${record.title}`}>
-          <time><strong>{record.deadline ? new Date(record.deadline).getDate() : '--'}</strong><span>日</span></time>
-          <div><strong>{record.title}</strong><small>{record.points ? `${record.points} 分` : '分值待定'} · {record.status ?? '进行中'}</small></div>
-        </a>) : <p className="empty-copy">作业 Markdown 增加 deadline 后会显示在这里。</p>}
+        {deadlineRecords.length ? deadlineRecords.map((record) => <a href={routeFor(record)} className="schedule-item" key={record.id} aria-label={`查看${record.title}`}>
+          <time><strong>{hardDeadlineOf(record) ? new Date(hardDeadlineOf(record)!).getDate() : '--'}</strong><span>日</span></time>
+          <div><strong>{record.title}</strong><small>{record.softDeadline ? `Soft ${formatDate(record.softDeadline, true)} · ` : ''}Hard {formatDate(hardDeadlineOf(record), true)}</small></div>
+        </a>) : <p className="empty-copy">实验或作业增加 hardDeadline 后会显示在这里。</p>}
       </div>
     </section>
   </div>;
@@ -176,7 +185,8 @@ function MarkdownPage({ record }: { record: CourseRecord }) {
     <header className={`document-header tone-${meta.tone}`}><p className="eyebrow">{meta.eyebrow} · {meta.label}</p><h1>{record.title}</h1><p>{record.summary}</p>
       <div className="document-meta">
         {record.updated && <span><CalendarDays size={15} /> 更新于 {formatDate(record.updated)}</span>}
-        {record.deadline && <span><Clock3 size={15} /> {formatDate(record.deadline, true)} 截止</span>}
+        {record.softDeadline && <span><Clock3 size={15} /> Soft DDL：{formatDate(record.softDeadline, true)}</span>}
+        {hardDeadlineOf(record) && <span><Clock3 size={15} /> Hard DDL：{formatDate(hardDeadlineOf(record), true)}</span>}
         {record.points != null && <span><ClipboardCheck size={15} /> {record.points} 分</span>}
         {record.externalUrl && <a href={record.externalUrl} target="_blank" rel="noreferrer">外部入口 <ExternalLink size={14} /></a>}
       </div>
