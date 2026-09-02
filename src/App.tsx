@@ -3,7 +3,7 @@ import DOMPurify from 'dompurify';
 import { marked } from 'marked';
 import {
   Archive, ArrowRight, BookOpen, CalendarDays, ChevronRight, ClipboardCheck, Clock3,
-  Download, ExternalLink, FileText, FlaskConical, GitFork, GraduationCap, Home, Menu,
+  Download, ExternalLink, FileText, FlaskConical, GraduationCap, Home, Menu,
   Search, ShieldCheck, TimerReset, X,
 } from 'lucide-react';
 import type { ContentIndex, CourseRecord, SectionId } from './types';
@@ -88,7 +88,6 @@ function Header({ records, onMenu }: { records: CourseRecord[]; onMenu: () => vo
         <a key={r.id} href={routeFor(r)} onClick={() => setQuery('')}><span>{r.title}</span><small>{sectionMeta[r.section].label}</small></a>
       )}</div>}
     </div>
-    <a className="github-link" href="https://github.com/" target="_blank" rel="noreferrer"><GitFork size={18} /><span>GitHub</span></a>
   </header>;
 }
 

@@ -1,6 +1,6 @@
 ---
 title: 第二次作业：深入神经网络
-summary: 后续将实现CNN,RNN。
+summary: 后续将实现CNN。
 order: 21
 updated: 2026-09-02
 deadline: 2026-10-10T23:59:00+08:00
