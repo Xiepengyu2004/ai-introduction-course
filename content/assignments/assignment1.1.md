@@ -8,7 +8,12 @@ softDeadline: 2026-09-15T23:59:00+08:00
 hardDeadline: 2026-09-20T23:59:00+08:00
 points: 100
 status: 进行中
+
+zipUrl: files/packages/project1.zip
+zipLabel: 实验代码下载
 ---
+
+
 
 # Assignment-1.1：深度学习基础
 
@@ -36,26 +41,9 @@ status: 进行中
 
 ### 环境设置
 
-- 请确保定期保存笔记本（`File -> Save`，即“文件 → 保存”）。这样，当你暂时离开作业、Colab 虚拟机断开连接时，就不会丢失进度。
-- 为了支持在会话中编辑文件，每次打开新的笔记本时，请在运行任何单元格之前，点击 `Runtime -> Change runtime type`（“运行时 → 更改运行时类型”）。在弹出的窗口中，将 `Runtime version`（“运行时版本”）从 `Latest`（“最新”）更改为 `2025.07`。（如果你已经启动了运行时，请点击 `Runtime -> Disconnect and delete runtime`，即“运行时 → 断开连接并删除运行时”。）
+本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的文件中**包含模型权重、包代码和notebook**。
 
-在Colab上完成除了 `collect_submission.ipynb` 之外的所有**Jupyter notebook**（`.ipynb`后缀文件）后，请根据**提交作业**指明的方式提交。
-
-----
-
-### 实验目标
-
-在本次作业中，你将练习搭建一个简单的图像分类工作流，所使用的分类器包括 k 近邻分类器以及 SVM/Softmax 分类器。本次作业的目标如下：
-
-- 理解基本的图像分类流程和数据驱动方法（训练/预测阶段）。
-- 理解**训练集、验证集和测试集**的划分，以及如何使用验证数据**调节超参数**。
-- 熟练使用 NumPy 编写高效的向量化代码。
-- 实现并应用 k 近邻（kNN）分类器。
-- 实现并应用 Softmax 分类器。
-- 实现并应用两层神经网络分类器。
-- 实现并应用全连接网络分类器。
-- 理解这些分类器之间的差异与权衡。
-- 初步了解使用高层次表示（相比于原始像素）所带来的性能提升，例如颜色直方图、方向梯度直方图（HOG）特征等。
+CoLab的使用方法请参考**实验介绍**部分。
 
 -----
 
@@ -83,38 +71,26 @@ status: 进行中
 
 ## 研究实验
 
+这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。
 
+#### 探究 1：
+
+对比不同梯度下降方法（Adam、RMSProp、SGD、Momentum）的损失函数变化并画图说明，分析不同梯度下降方法的优势和劣势。
+
+#### 探究 2：
+
+如何高效调参，结合本次实验的调参实验结果，总结出几条合理的调参经验。
+
+#### 探究 3：
+
+探究参数的初始化对激活值分布的影响，高斯分布初始化、He初始化、avier初始化，同时使用不同的激活函数尝试。
 
 ## 提交方式
 
-**重要提示：请务必确认待提交的notebook已经运行过，并且单元格输出清晰可见。**
-
-完成所有notebook并填写必要的代码后，请按照以下步骤提交作业：
-
-1. 在 kaggle中打开 `collect_submission.ipynb`，然后执行其中的单元格。
-
-   该脚本将会：
-
-   - 把你的代码（`.py` 和 `.ipynb` 文件）打包成名为 `a1_code_submission.zip` 的 ZIP 文件。
-   - 将所有笔记本转换并合并为一个 PDF 文件。
-
-   如果这一步成功完成，你应该会看到以下提示信息：
-
-   ```text
-   ### Done! Please submit a1_code_submission.zip and a1_inline_submission.pdf. ###
-   ```
-
-   中文含义：
-
-   > 完成！请将 `a1_code_submission.zip` 和 `a1_inline_submission.pdf` 提交到 Gradescope。
-
-2. 将 PDF 文件和 ZIP 文件提交至 [Gradescope](https://www.gradescope.com/courses/1288404)。
-
-在提交至 Gradescope 之前，请记得先把 `a1_code_submission.zip` 和 `a1_inline_submission.pdf` 下载到本地。
+后续更新
 
 ## 提醒
 
-- 不要使用测试集调参；
-- 提交前保证从头运行 notebook没有问题；
+- **不要使用测试集调参**；
+- 提交前保证从头运行 notebook没有问题，确保权重都存储下来了`.npy`文件；
 - 个人答案不得上传到公开仓库。
-

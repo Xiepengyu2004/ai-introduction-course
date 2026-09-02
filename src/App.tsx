@@ -12,7 +12,7 @@ const sectionMeta: Record<SectionId, {
   label: string; eyebrow: string; description: string; icon: typeof BookOpen; tone: string;
 }> = {
   docs: { label: '学习文档', eyebrow: 'LEARN', description: '课程讲义、知识地图与补充阅读', icon: BookOpen, tone: 'teal' },
-  labs: { label: '实验介绍', eyebrow: 'LABS', description: '实验目标、环境准备与验收标准', icon: FlaskConical, tone: 'blue' },
+  labs: { label: '实验资源', eyebrow: 'LABS', description: '环境配置、实验指导、论文与参考资料', icon: FlaskConical, tone: 'blue' },
   assignments: { label: '课程作业', eyebrow: 'WORK', description: '作业要求、截止时间与提交说明', icon: ClipboardCheck, tone: 'amber' },
   scores: { label: '作业得分', eyebrow: 'SCORES', description: '评分规则、成绩查询与复核流程', icon: GraduationCap, tone: 'slate' },
 };

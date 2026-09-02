@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T01:51:18.949Z",
+  "generatedAt": "2026-09-02T11:02:16.902Z",
   "records": [
     {
       "id": "docs/overview",
@@ -82,27 +82,6 @@
       "content": "\n# 实验一：环境与数据\n\n## 实验目标\n\n- 能够在 Kaggle 中挂载课程 Dataset；\n- 理解 `/kaggle/input` 与 `/kaggle/working` 的区别；\n- 成功加载并可视化 CIFAR-10；\n- 学会保存 notebook Version 和代码进度包。\n\n## 验收标准\n\n1. 输出训练集和测试集的 shape。\n2. 每个类别至少展示一张图像。\n3. 用一句话说明为什么测试集不能用于超参数选择。\n\n## 常见问题\n\n如果修改 `.py` 后 notebook 没有变化，请确认编辑的是 Working 下的可写副本，并重新运行 import 单元。\n"
     },
     {
-      "id": "labs/实验二-分类器",
-      "section": "labs",
-      "slug": "实验二-分类器",
-      "title": "实验二：从 kNN 到 Softmax",
-      "summary": "比较基于距离和基于参数的两类图像分类方法。",
-      "order": 11,
-      "updated": "Wed Sep 02 2026 08:00:00 GMT+0800 (GMT+08:00)",
-      "deadline": null,
-      "softDeadline": null,
-      "hardDeadline": null,
-      "points": null,
-      "status": null,
-      "externalUrl": null,
-      "pdfUrl": null,
-      "pdfLabel": null,
-      "pdfs": [],
-      "zipUrl": null,
-      "zipLabel": null,
-      "content": "\n# 实验二：从 kNN 到 Softmax\n\n本实验围绕两个问题展开：如何定义“相似”，以及如何通过数据学习分类边界。\n\n## 核心任务\n\n- 实现 kNN 的双循环和完全向量化距离；\n- 使用 cross-validation 选择 `k`；\n- 推导 Softmax loss 与梯度；\n- 使用数值梯度检查实现；\n- 比较训练成本、预测成本与准确率。\n\n## 实验报告建议\n\n不要只粘贴最终准确率。至少保留一次失败或不理想的实验，并说明你如何根据结果修改参数或代码。\n"
-    },
-    {
       "id": "assignments/assignment1.1",
       "section": "assignments",
       "slug": "assignment1.1",
@@ -110,18 +89,18 @@
       "summary": "完成 kNN、Softmax分、两层神经网络、特征训练和全连接层网络板块。",
       "order": 20,
       "updated": "Wed Sep 02 2026 08:00:00 GMT+0800 (GMT+08:00)",
-      "deadline": "Sun Sep 20 2026 23:59:00 GMT+0800 (GMT+08:00)",
-      "softDeadline": null,
-      "hardDeadline": null,
+      "deadline": null,
+      "softDeadline": "Tue Sep 15 2026 23:59:00 GMT+0800 (GMT+08:00)",
+      "hardDeadline": "Sun Sep 20 2026 23:59:00 GMT+0800 (GMT+08:00)",
       "points": 100,
       "status": "进行中",
       "externalUrl": null,
       "pdfUrl": null,
       "pdfLabel": null,
       "pdfs": [],
-      "zipUrl": null,
-      "zipLabel": null,
-      "content": "\n# Assignment-1.1：深度学习基础\n\n## 基础部分\n\n| 部分 | 分值 |\n|---|---:|\n| kNN | 10 |\n| Softmax | 15 |\n| 两层神经网络 | 30 |\n| 从像素到特征 |   10 |\n| 全连接层网络 |   35 |\n\n## 提交内容\n\n1. 外部 Python 代码 ZIP；\n2. 提交检查报告；\n3. 已保存的 Kaggle Notebook Version 链接或导出的 `.ipynb`；\n4. 如教学平台要求，另交 PDF。\n\n## 提醒\n\n- 不要使用测试集调参；\n- 提交前从头运行 notebook；\n- 个人答案和成绩不得上传到公开仓库。\n"
+      "zipUrl": "files/packages/project1.zip",
+      "zipLabel": "实验代码下载",
+      "content": "\n\n\n# Assignment-1.1：深度学习基础\n\n### 截止时间\n\n> softDeadline: **2026年9月15日（周二）晚上 23:59**\n> hardDeadline: **2026年9月20日（周日）晚上 23:59**\n\n----\n\n### 分数分布\n\n| 部分 | 分值 |\n|:--|:--:|\n| 问题1：kNN | 10 |\n| 问题2：Softmax | 15 |\n| 问题3：两层神经网络 | 25 |\n| 问题4：图像特征 |   10 |\n| 问题5：全连接层网络 | 25 |\n| 探究1：优化器算法 | 5 |\n| 探究2：调参方法 | 5 |\n| 探究3：初始化方法 | 5 |\n\n----\n\n### 环境设置\n\n本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的文件中**包含模型权重、包代码和notebook**。\n\nCoLab的使用方法请参考**实验介绍**部分。\n\n-----\n\n### 任务总览\n\n#### 问题 1：k 近邻分类器\n\n`knn.ipynb` 将引导你实现 kNN 分类器。\n\n#### 问题 2：实现 Softmax 分类器\n\n`softmax.ipynb` 将引导你实现 Softmax 分类器。\n\n#### 问题 3：两层神经网络\n\n`two_layer_net.ipynb` 将引导你实现一个两层神经网络分类器。\n\n#### 问题 4：更高层次的表示——图像特征\n\n`features.ipynb` 将研究与直接使用原始像素值相比，使用更高层次的图像表示能够带来哪些提升。\n\n#### 问题 5：训练全连接网络\n\n`FullyConnectedNets.ipynb` 将引导你实现全连接网络。\n\n## 研究实验\n\n这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。\n\n#### 探究 1：\n\n对比不同梯度下降方法（Adam、RMSProp、SGD、Momentum）的损失函数变化并画图说明，分析不同梯度下降方法的优势和劣势。\n\n#### 探究 2：\n\n如何高效调参，结合本次实验的调参实验结果，总结出几条合理的调参经验。\n\n#### 探究 3：\n\n探究参数的初始化对激活值分布的影响，高斯分布初始化、He初始化、avier初始化，同时使用不同的激活函数尝试。\n\n## 提交方式\n\n后续更新\n\n## 提醒\n\n- **不要使用测试集调参**；\n- 提交前保证从头运行 notebook没有问题，确保权重都存储下来了`.npy`文件；\n- 个人答案不得上传到公开仓库。\n"
     },
     {
       "id": "assignments/assignment1.2",
@@ -145,9 +124,9 @@
       "content": "\n# 第二次作业预告\n\n正式要求将在assignment1.1截至发布。本页面中的时间用于课程日历占位，如有调整会通过课程通知同步。\n"
     },
     {
-      "id": "scores/scoresQuery",
+      "id": "scores/scoresRules",
       "section": "scores",
-      "slug": "scoresQuery",
+      "slug": "scoresRules",
       "title": "评分规则与成绩查询",
       "summary": "查看作业评分结构、复核流程和安全的成绩查询方式。",
       "order": 30,
@@ -163,7 +142,7 @@
       "pdfs": [],
       "zipUrl": null,
       "zipLabel": null,
-      "content": "\n# 评分规则与成绩查询\n\n## 评分原则\n\n### 基础实验：\n\n- 正确性：实现通过基础与边界测试；\n- 方法：遵守向量化、数据划分等实验要求；\n- 分析：能够使用实验结果支持结论；\n- 规范：输出完整、图表清晰、按时提交。\n\n### 探究实验：\n\n\n\n## 提交地址\n\n## 查询个人成绩\n\n为了保护学生的隐私，后续会发布问卷，填写`学号-publicID`，`publicID`可以自由设置（最好`publicID`仅个人知晓），分数统计结果将以`publicID`在课程主页发布。\n\n## 申请复核\n\n成绩发布后 7 天内在QQ向助教提交复核申请，提供题号、原提交内容和具体疑问。复核可能导致分数上升、保持不变或下降。\n"
+      "content": "\n# 评分规则与成绩查询\n\n## 评分原则\n\n### 基础实验：\n\n提交的时候保证notebook在Kaggle上可以顺利执行一遍，根据样例输出结果评定正确即可获得这部分的分数。\n\n### 探究实验：\n\n根据提交实验报告主观评定，综合个人思考深度（**更重要**），绘图，报告美观度（加分项）给分。\n\n### 分数分布：\n\n* 期末考试 (45%)\n\n* 课程实验 (45%)\n\n  |    Assignment1    |   10%   |\n  | :---------------: | :-----: |\n  |  **Assignment2**  | **10%** |\n  |  **Assignment3**  | **10%** |\n  | **Final Project** | **15%** |\n\n* 课程竞赛 (10%)\n\n  * | **提交获得分数** | **80%** |\n    | :--------------: | :-----: |\n    |   **实验报告**   | **20%** |\n\n### Soft 和 Hard DDL\n\n* 在Soft DDL前提交奖励**单次实验总分**5%的分数\n* **实践+竞赛部分汇总分数不超过55**\n\n## 提交地址\n\nTODO\n\n## 查询个人成绩\n\n为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。\n\n## 申请复核\n\n成绩发布后 7 天内在QQ向助教提交复核申请，提供题号、原提交内容和具体疑问。复核可能导致分数上升、保持不变或下降。\n"
     }
   ]
 }
