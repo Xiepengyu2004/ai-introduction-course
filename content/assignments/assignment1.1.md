@@ -9,7 +9,7 @@ hardDeadline: 2026-09-25T23:59:00+08:00
 points: 100
 status: 进行中
 
-zipUrl: files/packages/project1.zip
+zipUrl: files/packages/assignment_1_1.zip
 zipLabel: 实验代码下载
 ---
 
@@ -90,7 +90,7 @@ CoLab的使用方法请参考**实验介绍**部分。
 1. 统一将文件组织成如下形式再进行压缩：
 
    ```
-   project1/
+   assignment_1_1/
    ├── assignment_1_1/
    ├── FullyConnectedNets.ipynb
    ├── softmax.ipynb
