@@ -104,7 +104,6 @@ function Sidebar({ records, open, onClose }: { records: CourseRecord[]; open: bo
           </div>;
         })}
       </nav>
-      <div className="sidebar-note"><ShieldCheck size={17} /><p>个人成绩请通过校内系统查询，不在公开仓库保存。</p></div>
     </aside>
   </>;
 }
@@ -120,8 +119,7 @@ function HomePage({ records }: { records: CourseRecord[] }) {
     <section className="hero-card">
       <div className="hero-copy">
         <p className="eyebrow">2026 · INTRODUCTION TO AI</p>
-        <h1>从算法直觉出发，<br />构建你的第一个智能系统。</h1>
-        <p className="hero-summary">这里集中整理课程讲义、实验要求、作业说明和重要时间节点。内容由 Markdown 驱动，持续随课程更新。</p>
+        <h1>从这里开始你的人工智能学习生涯</h1>
         <div className="hero-actions">
           <a className="primary-button" href={firstDoc ? routeFor(firstDoc) : '#/'}>开始学习 <ArrowRight size={17} /></a>
           <a className="text-button" href={firstLab ? routeFor(firstLab) : '#/'}>查看实验安排</a>

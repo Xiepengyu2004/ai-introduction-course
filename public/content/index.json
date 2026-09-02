@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T00:41:02.153Z",
+  "generatedAt": "2026-09-02T00:56:17.939Z",
   "records": [
     {
       "id": "docs/课程导览",
@@ -21,11 +21,11 @@
       "content": "\n# 欢迎学习《人工智能导论》\n\n本课程面向第一次系统接触人工智能的大二本科生。我们会从问题表示、搜索与优化开始，逐步进入机器学习、神经网络和现代人工智能系统。\n\n## 你将学到什么\n\n- 用形式化方法描述一个智能问题；\n- 理解训练集、验证集和测试集的作用；\n- 使用 NumPy 实现基础分类算法；\n- 阅读训练曲线并诊断欠拟合与过拟合；\n- 对模型的能力、限制和社会影响保持批判性认识。\n\n## 推荐学习循环\n\n1. 课前阅读学习文档，记录不理解的概念。\n2. 课堂上关注公式背后的直觉，而不只是结论。\n3. 实验前先阅读验收标准，再开始编程。\n4. 每次实验都保留运行输出和简短结论。\n5. 遇到错误时先构造最小测试，而不是直接大规模训练。\n\n> 课程网站会持续更新。请以网页上标记的 DDL 和课程通知为准。\n"
     },
     {
-      "id": "docs/NumPy向量化基础",
+      "id": "docs/slides",
       "section": "docs",
-      "slug": "NumPy向量化基础",
-      "title": "NumPy 向量化基础",
-      "summary": "为 kNN、Softmax 和神经网络实验准备 broadcasting 与矩阵运算知识。",
+      "slug": "slides",
+      "title": "课件",
+      "summary": "课件下载地址",
       "order": 2,
       "updated": "Wed Sep 02 2026 08:00:00 GMT+0800 (GMT+08:00)",
       "deadline": null,
@@ -34,10 +34,27 @@
       "externalUrl": null,
       "pdfUrl": null,
       "pdfLabel": null,
-      "pdfs": [],
+      "pdfs": [
+        {
+          "url": "files/docs/Chapter0_人工智能简介.pdf",
+          "label": "人工智能简介"
+        },
+        {
+          "url": "files/docs/chapter1_机器学习基础.pdf",
+          "label": "机器学习基础"
+        },
+        {
+          "url": "files/docs/Chapter2_1_神经网络与反向传播.pdf",
+          "label": "神经网络与反向传播"
+        },
+        {
+          "url": "files/docs/Chapter2_参数正则化与优化.pdf",
+          "label": "参数正则化与优化"
+        }
+      ],
       "zipUrl": null,
       "zipLabel": null,
-      "content": "\n# NumPy 向量化基础\n\n向量化的目标不是“少写几行代码”，而是把逐样本计算改写成矩阵运算，使计算能够交给底层高效实现。\n\n## 必须掌握的操作\n\n| 操作 | 常见用途 |\n|---|---|\n| `reshape` | 改变样本的组织方式 |\n| `sum(axis=...)` | 沿指定维度聚合 |\n| broadcasting | 避免复制数据 |\n| 布尔索引 | ReLU、分类正确项处理 |\n| `argmax` | 从分类分数得到预测类别 |\n\n```python\n# X: (N, D), W: (D, C)\nscores = X @ W\npredictions = np.argmax(scores, axis=1)\n```\n\n## 自检问题\n\n如果 `X.shape == (500, 3072)`，`W.shape == (3072, 10)`，那么 `X @ W` 的 shape 是多少？每个维度分别代表什么？\n"
+      "content": "\n\n\n"
     },
     {
       "id": "labs/实验一-环境与数据",

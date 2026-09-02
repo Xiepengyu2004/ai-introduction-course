@@ -1,6 +1,6 @@
 ---
-title: 课件总览
-summary: 在这里可以下载课件。
+title: 课件
+summary: 课件下载地址
 order: 2
 updated: 2026-09-02
 pdfs:
