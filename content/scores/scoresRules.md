@@ -3,6 +3,9 @@ title: 评分规则与成绩查询
 summary: 查看作业评分结构、复核流程和安全的成绩查询方式。
 order: 30
 updated: 2026-09-02
+
+zipUrl: files/packages/Report_Template.zip
+zipLabel: 实验报告Latex模板
 ---
 
 # 评分规则与成绩查询
@@ -11,7 +14,7 @@ updated: 2026-09-02
 
 ### 基础实验：
 
-提交的时候保证notebook在Kaggle上可以顺利执行一遍，保证存储了模型参数文件`.npy`，最终会通过少量测试样例自动化评判。
+提交的时候保证notebook在Kaggle、Colab或者本地可以顺利执行一遍，保证存储了模型参数文件`.npy`，最终会通过少量测试样例自动化评判。
 
 ### 探究实验：
 
@@ -41,7 +44,11 @@ updated: 2026-09-02
 
 ## 提交地址
 
-TODO
+* Assignment1
+  * [1.1](https://box.nju.edu.cn/u/d/3334549139d94e348580/)
+  * todo
+* Assignment2
+* Assignment3
 
 ## 查询个人成绩
 
