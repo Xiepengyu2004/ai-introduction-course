@@ -175,5 +175,15 @@ sys.path.append(...)
 
 **在执行jupyter文件的时候，如果修改了已导入模块的代码（比如softmax.py）， 需要释放临时环境重新执行才能生效** 
 
-如果有其他更好解决方案，欢迎交流。
+解决方案：在各个`.ipynb`文件前面加上这段代码
+
+```
+import sys
+import importlib
+
+sys.modules["imp"] = importlib
+
+%load_ext autoreload
+%autoreload 2
+```
 
