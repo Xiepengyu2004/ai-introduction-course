@@ -53,6 +53,7 @@ zipLabel: 实验报告Latex模板
 ## 查询个人成绩
 
 为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。
+- Assignment_1_1: https://table.nju.edu.cn/dtable/links/7165467e178f424583ac
 
 ## 申请复核
 
