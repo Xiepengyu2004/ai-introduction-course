@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T10:58:56.786Z",
+  "generatedAt": "2026-09-14T09:25:53.542Z",
   "records": [
     {
       "id": "docs/overview",
@@ -94,8 +94,8 @@
       "order": 20,
       "updated": "Wed Sep 02 2026 08:00:00 GMT+0800 (GMT+08:00)",
       "deadline": null,
-      "softDeadline": "Tue Sep 15 2026 23:59:00 GMT+0800 (GMT+08:00)",
-      "hardDeadline": "Fri Sep 25 2026 23:59:00 GMT+0800 (GMT+08:00)",
+      "softDeadline": "Sun Sep 20 2026 23:59:00 GMT+0800 (GMT+08:00)",
+      "hardDeadline": "Wed Sep 30 2026 23:59:00 GMT+0800 (GMT+08:00)",
       "points": 100,
       "status": "进行中",
       "externalUrl": null,
@@ -104,7 +104,7 @@
       "pdfs": [],
       "zipUrl": "files/packages/assignment_1_1.zip",
       "zipLabel": "实验代码下载",
-      "content": "\n# Assignment-1.1：深度学习基础\n\n## 截止时间\n\n> softDeadline: **2026年9月15日（周二）晚上 23:59**\n> hardDeadline: **2026年9月25日（周日）晚上 23:59**\n\n----\n\n## 分数分布\n\n| 部分 | 分值 |\n|:--|:--:|\n| 基础实验1：Softmax | 10 |\n| 基础实验2：两层神经网络 | 20 |\n| 基础实验3：全连接层网络 | 25 |\n| 研究实验1：优化器算法 | 15 |\n| 研究实验2：调参方法 | 15 |\n| 研究实验3：初始化方法 | 15 |\n\n----\n\n## 环境设置\n\n本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的zip文件包含**包含模型权重、包代码和notebook**。\n\nCoLab的使用方法请参考**实验介绍**部分。\n\n----\n\n**Assignment1.1分两个部分完成：基础实验+研究实验**\n\n## 基础实验\n\n> **每个问题的具体实验指引在notebook(.ipynb)中 !!!!!!!!**\n\n#### 问题 1：实现 Softmax 分类器\n\n`softmax.ipynb` 将引导你实现 Softmax 分类器。\n\n#### 问题 2：两层神经网络\n\n`two_layer_net.ipynb` 将引导你实现一个两层神经网络分类器。\n\n#### 问题 3：训练全连接网络\n\n`FullyConnectedNets.ipynb` 将引导你实现全连接网络。\n\n## 研究实验\n\n这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。\n\n#### 探究 1：优化器算法\n\n对比不同梯度下降方法（**Adam、RMSProp、SGD、Momentum**）的损失函数变化并画图说明，分析不同梯度下降方法的优势和劣势。\n\n#### 探究 2：调参方法\n\n如何高效调参，结合本次实验的调参实验结果，总结出几条合理的调参经验。\n\n#### 探究 3：初始化方法\n\n探究参数的初始化对激活值分布的影响，高斯分布初始化、He初始化、avier初始化，同时使用不同的激活函数尝试。\n\n## 实验报告要求\n\n1. 基础实验讲清楚大致实验过程即可。\n2. 针对每个探究问题写清楚**实验设置**、**实验结果**、**实验分析**、和**实验结论。**\n3. **实验结果**需要包含**可视化图表。**\n4. **实验分析**不能只描述表现，要尝试解释原因，比如不能只说“如图显示损失下降”，要解释**为什么**上升/下降/震荡。\n5. 实验报告长度不做要求，但是需要表述完整清楚。\n6. 实验报告模板见**作业得分**板块\n\n## 提交方式\n\n1. 统一将文件组织成如下形式再进行压缩：\n\n   ```\n   assignment_1_1/\n   ├── assignment_1_1/\n   ├── FullyConnectedNets.ipynb\n   ├── softmax.ipynb\n   ├── softmax.npy\n   ├── best_softmax.npy\n   ├── best_two_layer_net.npy\n   ├── fully_connected_nets.npy\n   ├── two_layer_net.ipynb\n   ├── ..... 探究实验代码\n   └── 学号_report.pdf\n   ```\n\n2. 压缩后命名为`学号_assignment1_1.zip`\n\n3. 将压缩文件提交至[https://box.nju.edu.cn/u/d/3334549139d94e348580/](https://box.nju.edu.cn/u/d/3334549139d94e348580/)\n\n## 提醒\n\n- **不要使用测试集调参**；\n- 提交前保证从头运行 notebook没有问题，确保权重都以`.npy`文件形式存储下来了；\n- 个人答案不得上传到公开仓库。\n"
+      "content": "\n# Assignment-1.1：深度学习基础\n\n## 截止时间\n\n> softDeadline: **2026年9月20日（周二）晚上 23:59**\n> hardDeadline: **2026年9月30日（周日）晚上 23:59**\n\n----\n\n## 分数分布\n\n| 部分 | 分值 |\n|:--|:--:|\n| 基础实验1：Softmax | 10 |\n| 基础实验2：两层神经网络 | 20 |\n| 基础实验3：全连接层网络 | 25 |\n| 研究实验1：优化器算法 | 15 |\n| 研究实验2：调参方法 | 15 |\n| 研究实验3：初始化方法 | 15 |\n\n----\n\n## 环境设置\n\n本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的zip文件包含**包含模型权重、包代码和notebook**。\n\nCoLab的使用方法请参考**实验介绍**部分。\n\n----\n\n**Assignment1.1分两个部分完成：基础实验+研究实验**\n\n## 基础实验\n\n> **每个问题的具体实验指引在notebook(.ipynb)中 !!!!!!!!**\n\n#### 问题 1：实现 Softmax 分类器\n\n`softmax.ipynb` 将引导你实现 Softmax 分类器。\n\n#### 问题 2：两层神经网络\n\n`two_layer_net.ipynb` 将引导你实现一个两层神经网络分类器。\n\n#### 问题 3：训练全连接网络\n\n`FullyConnectedNets.ipynb` 将引导你实现全连接网络。\n\n## 研究实验\n\n这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。\n\n#### 探究 1：优化器算法\n\n对比不同梯度下降方法（**Adam、RMSProp、SGD、Momentum**）的损失函数变化并画图说明，分析不同梯度下降方法的优势和劣势。\n\n#### 探究 2：调参方法\n\n如何高效调参，结合本次实验的调参实验结果，总结出几条合理的调参经验。\n\n#### 探究 3：初始化方法\n\n探究参数的初始化对激活值分布的影响，高斯分布初始化、He初始化、avier初始化，同时使用不同的激活函数尝试。\n\n## 实验报告要求\n\n1. 基础实验讲清楚大致实验过程即可。\n2. 针对每个探究问题写清楚**实验设置**、**实验结果**、**实验分析**、和**实验结论。**\n3. **实验结果**需要包含**可视化图表。**\n4. **实验分析**不能只描述表现，要尝试解释原因，比如不能只说“如图显示损失下降”，要解释**为什么**上升/下降/震荡。\n5. 实验报告长度不做要求，但是需要表述完整清楚。\n6. 实验报告模板见**作业得分**板块\n\n## 提交方式\n\n1. 统一将文件组织成如下形式再进行压缩：\n\n   ```\n   assignment_1_1/\n   ├── assignment_1_1/\n   ├── FullyConnectedNets.ipynb\n   ├── softmax.ipynb\n   ├── softmax.npy\n   ├── best_softmax.npy\n   ├── best_two_layer_net.npy\n   ├── fully_connected_nets.npy\n   ├── two_layer_net.ipynb\n   ├── ..... 探究实验代码\n   └── 学号_report.pdf\n   ```\n\n2. 压缩后命名为`学号_assignment1_1.zip`\n\n3. 将压缩文件提交至[https://box.nju.edu.cn/u/d/3334549139d94e348580/](https://box.nju.edu.cn/u/d/3334549139d94e348580/)\n\n## 提醒\n\n- **不要使用测试集调参**；\n- 提交前保证从头运行 notebook没有问题，确保权重都以`.npy`文件形式存储下来了；\n- 个人答案不得上传到公开仓库。\n"
     },
     {
       "id": "assignments/assignment1.2",
@@ -113,19 +113,19 @@
       "title": "Assignment-1.2：深入神经网络",
       "summary": "后续将实现CNN、RNN。",
       "order": 21,
-      "updated": "Wed Sep 02 2026 08:00:00 GMT+0800 (GMT+08:00)",
+      "updated": "Mon Sep 14 2026 08:00:00 GMT+0800 (GMT+08:00)",
       "deadline": null,
-      "softDeadline": "Mon Sep 28 2026 23:59:00 GMT+0800 (GMT+08:00)",
-      "hardDeadline": "Thu Oct 08 2026 23:59:00 GMT+0800 (GMT+08:00)",
+      "softDeadline": "Thu Oct 01 2026 23:59:00 GMT+0800 (GMT+08:00)",
+      "hardDeadline": "Sun Oct 11 2026 23:59:00 GMT+0800 (GMT+08:00)",
       "points": 100,
-      "status": "未发布",
+      "status": "进行中",
       "externalUrl": null,
       "pdfUrl": null,
       "pdfLabel": null,
       "pdfs": [],
       "zipUrl": "files/packages/assignment_1_2.zip",
       "zipLabel": "实验代码下载",
-      "content": "\n# Assignment-1.2 深入神经网络（未更新）\n\n## 截止时间\n\n> softDeadline: **2026年9月28日（周二）晚上 23:59**\n> hardDeadline: **2026年10月8日（周四）晚上 23:59**\n\n----\n\n## 分数分布\n\n| 部分                    | 分值 |\n| :---------------------- | :--: |\n| 基础实验1：Softmax      |  10  |\n| 基础实验2：两层神经网络 |  20  |\n| 基础实验3：全连接层网络 |  25  |\n| 研究实验1：优化器算法   |  15  |\n| 研究实验2：调参方法     |  15  |\n| 研究实验3：初始化方法   |  15  |\n\n----\n\n## 环境设置\n\n本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的zip文件包含**包含模型权重、包代码和notebook**。\n\nCoLab的使用方法请参考**实验介绍**部分。\n\n----\n\n**Assignment1.2分两个部分完成：基础实验+研究实验**\n\n## 基础实验\n\n> **每个问题的具体实验指引在notebook(.ipynb)中 !!!!!!!!**\n\n#### 问题 1：卷积神经网络 (Convolutional Neural Networks)\n\n在 `ConvolutionalNetworks.ipynb` 笔记本中，你将实现几种卷积神经网络中常用的新层。\n\n#### 问题 2：基于PyTorch的CIFAR-10任务\n\n在这一部分，你将使用 PyTorch（**一个流行且强大的深度学习框架**）。打开 `PyTorch.ipynb`。你将学习该框架的工作原理，并最终在CIFAR-10数据集上训练一个由你亲自设计的卷积神经网络，以追求最佳性能。\n\n#### 问题 3：基于基础RNN的图像描述生成 (Image Captioning)\n\n`RNN_Captioning_pytorch.ipynb`笔记本将带你实现基础循环神经网络 (Vanilla RNN)，并将其应用于COCO数据集上的图像描述生成任务。\n\n## 研究实验\n\n这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。\n\n#### 探究 1：优化器算法\n\n对比不同梯度下降方法（**Adam、RMSProp、SGD、Momentum**）的损失函数变化并画图说明，分析不同梯度下降方法的优势和劣势。\n\n#### 探究 2：调参方法\n\n如何高效调参，结合本次实验的调参实验结果，总结出几条合理的调参经验。\n\n#### 探究 3：初始化方法\n\n探究参数的初始化对激活值分布的影响，高斯分布初始化、He初始化、avier初始化，同时使用不同的激活函数尝试。\n\n## 实验报告要求\n\n1. 基础实验。\n2. 针对每个探究问题写清楚**实验设置**、**实验结果**、**实验分析**、和**实验结论。**\n3. **实验结果**需要包含**可视化图表。**\n4. **实验分析**不能只描述表现，要尝试解释原因，比如不能只说“如图显示损失下降”，要解释**为什么**上升/下降/震荡。\n5. 实验报告长度不做要求，但是需要表述完整清楚。\n6. 实验报告模板见**作业得分**板块\n\n## 提交方式\n\n1. 统一将文件组织成如下形式再进行压缩：\n\n   ```\n   assignment_1_2/\n   ├── assignment_1_2/\n   ├── FullyConnectedNets.ipynb\n   ├── softmax.ipynb\n   ├── softmax.npy\n   ├── best_softmax.npy\n   ├── best_two_layer_net.npy\n   ├── fully_connected_nets.npy\n   ├── two_layer_net.ipynb\n   ├── ..... 探究实验代码\n   └── 学号_report.pdf\n   ```\n\n2. 压缩后命名为`学号_assignment1_2.zip`\n\n3. 将压缩文件提交至TODO\n\n## 提醒\n\n- **不要使用测试集调参**；\n- 提交前保证从头运行 notebook没有问题，确保权重都以`.npy`文件形式存储下来了；\n- 个人答案不得上传到公开仓库。\n"
+      "content": "\n# Assignment-1.2 深入神经网络\n\n## 截止时间\n\n> softDeadline: **2026年10月1日（周二）晚上 23:59**\n> hardDeadline: **2026年10月11日（周四）晚上 23:59**\n\n----\n\n## 分数分布\n\n| 部分                           | 分值 |\n| :----------------------------- | :--: |\n| 基础实验1：卷积神经网络        |  40  |\n| 基础实验2：PyTorch入门         |  20  |\n| 研究实验1：PyTorch挑战CIFAR-10 |  40  |\n\n----\n\n## 环境设置\n\n本节课所有实验不对所使用平台做要求，但建议使用CoLab进行实验，最终需要保证提交的zip文件包含**包含模型权重、包代码和notebook**。\n\nCoLab的使用方法请参考**实验介绍**部分。\n\n----\n\n**Assignment1.2分两个部分完成：基础实验+研究实验**\n\n## 基础实验\n\n> **每个问题的具体实验指引在notebook(.ipynb)中 !!!!!!!!**\n\n#### 问题 1：卷积神经网络 (Convolutional Neural Networks)\n\n在 `ConvolutionalNetworks.ipynb` 笔记本中，你将实现几种卷积神经网络中常用的新层，以及实现一个简单的CNN网络进行训练。\n\n#### 问题 2：PyTorch入门\n\n在这一部分，你将学会使用 PyTorch（**一个流行且强大的深度学习框架**），打开 `PyTorch.ipynb`学习PyTorch的基本操作吧。\n\n## 研究实验\n\n这一部分属于开放性问题，可以自主或者结合AI设计合理的实验方案。\n\n#### 探究 1：使用PyTorch挑战CIFAR-10分类任务\n\n这一部分自由设计模型架构（层数，优化器，超参），要求是利用Pytorch框架进行模型的开发，你可以尝试任何PyTorch提供的板块和功能。\n\n## 实验报告要求\n\n1. 基础实验。\n2. 针对每个探究问题写清楚**实验设置**、**实验结果**、**实验分析**、和**实验结论。**\n3. **实验结果**需要包含**可视化图表。**\n4. **实验分析**不能只描述表现，要尝试解释原因，比如不能只说“如图显示损失下降”，要解释**为什么**上升/下降/震荡。\n5. 实验报告长度不做要求，但是需要表述完整清楚。\n6. 实验报告模板见**作业得分**板块\n\n## 提交方式\n\n1. 统一将文件组织成如下形式再进行压缩：\n\n   ```\n   assignment_1_2/\n   ├── assignment_1_2/\n   ├── ConvolutionalNetworks.ipynb\n   ├── PyTorch.ipynb\n   ├── ConvolutionalNetworks.npy\n   ├── two_layer_fc.npy\n   ├── three_layer_convnet.npy\n   ├── two_layer_fc_seq.npy\n   ├── three_layer_convnet_seq.npy\n   ├── ..... 探究实验代码\n   └── 学号_report.pdf\n   ```\n   \n2. 压缩后命名为`学号_assignment1_2.zip`\n\n3. 将压缩文件提交至[https://box.nju.edu.cn/u/d/5f8be2351b8949079e75/](https://box.nju.edu.cn/u/d/5f8be2351b8949079e75/)\n\n## 提醒\n\n- **不要使用测试集调参**；\n- 提交前保证从头运行 notebook没有问题，确保权重都以`.npy`文件形式存储下来了；\n- 个人答案不得上传到公开仓库。\n"
     },
     {
       "id": "scores/scoresRules",
@@ -146,7 +146,7 @@
       "pdfs": [],
       "zipUrl": "files/packages/Report_Template.zip",
       "zipLabel": "实验报告Latex模板",
-      "content": "\r\n# 评分规则与成绩查询\r\n\r\n## 评分原则\r\n\r\n### 基础实验：\r\n\r\n提交的时候保证notebook在Kaggle、Colab或者本地可以顺利执行一遍，保证存储了模型参数文件`.npy`，最终会通过少量测试样例自动化评判。\r\n\r\n### 探究实验：\r\n\r\n根据提交实验报告主观评定，综合个人思考深度（**更重要**），绘图，报告美观度（加分项）给分。\r\n\r\n### 分数分布：\r\n\r\n* 期末考试 (45%)\r\n* 课程实验 (45%)\r\n\r\n|    Assignment1    |   10%   |\r\n| :---------------: | :-----: |\r\n|  **Assignment2**  | **10%** |\r\n|  **Assignment3**  | **10%** |\r\n| **Final Project** | **15%** |\r\n\r\n* 课程竞赛 (10%)\r\n\r\n| **提交获得分数** | **80%** |\r\n| :--------------: | :-----: |\r\n|   **实验报告**   | **20%** |\r\n\r\n### Soft 和 Hard DDL\r\n\r\n* 在Soft DDL前提交奖励**单次实验总分**5%的分数\r\n* **实践+竞赛部分汇总分数不超过55**\r\n\r\n## 提交地址\r\n\r\n* Assignment1\r\n  * [1.1](https://box.nju.edu.cn/u/d/3334549139d94e348580/)\r\n  * todo\r\n* Assignment2\r\n* Assignment3\r\n\r\n## 查询个人成绩\r\n\r\n为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。\r\n- Assignment_1_1: https://table.nju.edu.cn/dtable/links/7165467e178f424583ac\r\n\r\n## 申请复核\r\n\r\n成绩发布后 7 天内在QQ向助教提交复核申请，提供题号、原提交内容和具体疑问。复核可能导致分数上升、保持不变或下降。\r\n"
+      "content": "\r\n# 评分规则与成绩查询\r\n\r\n## 评分原则\r\n\r\n### 基础实验：\r\n\r\n提交的时候保证notebook在Kaggle、Colab或者本地可以顺利执行一遍，保证存储了模型参数文件`.npy`，最终会通过少量测试样例自动化评判。\r\n\r\n### 探究实验：\r\n\r\n根据提交实验报告主观评定，综合个人思考深度（**更重要**），绘图，报告美观度（加分项）给分。\r\n\r\n### 分数分布：\r\n\r\n* 期末考试 (45%)\r\n* 课程实验 (45%)\r\n\r\n|    Assignment1    |   10%   |\r\n| :---------------: | :-----: |\r\n|  **Assignment2**  | **10%** |\r\n|  **Assignment3**  | **10%** |\r\n| **Final Project** | **15%** |\r\n\r\n* 课程竞赛 (10%)\r\n\r\n| **提交获得分数** | **80%** |\r\n| :--------------: | :-----: |\r\n|   **实验报告**   | **20%** |\r\n\r\n### Soft 和 Hard DDL\r\n\r\n* 在Soft DDL前提交奖励**单次实验总分**5%的分数\r\n* **实践+竞赛部分汇总分数不超过55**\r\n\r\n## 提交地址\r\n\r\n* Assignment1\r\n  * [1.1](https://box.nju.edu.cn/u/d/3334549139d94e348580/)\r\n  * [1.2](https://box.nju.edu.cn/u/d/5f8be2351b8949079e75/)\r\n* Assignment2\r\n* Assignment3\r\n\r\n## 查询个人成绩\r\n\r\n为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。（下面分数是通过提交时间加权后的分数）\r\n\r\n- Assignment_1_1:\r\n  - [基础实验](https://table.nju.edu.cn/dtable/links/7165467e178f424583ac)\r\n  - [探究实验]()\r\n  - [总分]()\r\n- Assignment_1_2:\r\n  - [基础实验](https://table.nju.edu.cn/dtable/links/c8aaa6680f744b15a00b)\r\n  - [探究实验]()\r\n  - [总分]()\r\n\r\n## 申请复核\r\n\r\n成绩发布后 7 天内在QQ向助教提交复核申请，提供题号、原提交内容和具体疑问。复核可能导致分数上升、保持不变或下降。\r\n"
     }
   ]
 }
