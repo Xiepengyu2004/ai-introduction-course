@@ -46,14 +46,22 @@ zipLabel: 实验报告Latex模板
 
 * Assignment1
   * [1.1](https://box.nju.edu.cn/u/d/3334549139d94e348580/)
-  * todo
+  * [1.2](https://box.nju.edu.cn/u/d/5f8be2351b8949079e75/)
 * Assignment2
 * Assignment3
 
 ## 查询个人成绩
 
-为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。
-- Assignment_1_1: https://table.nju.edu.cn/dtable/links/7165467e178f424583ac
+为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。（下面分数是通过提交时间加权后的分数）
+
+- Assignment_1_1:
+  - [基础实验](https://table.nju.edu.cn/dtable/links/7165467e178f424583ac)
+  - [探究实验]()
+  - [总分]()
+- Assignment_1_2:
+  - [基础实验](https://table.nju.edu.cn/dtable/links/c8aaa6680f744b15a00b)
+  - [探究实验]()
+  - [总分]()
 
 ## 申请复核
 
