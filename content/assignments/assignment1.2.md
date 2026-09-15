@@ -4,8 +4,8 @@ summary: 后续将实现CNN，学习PyTorch基础。
 order: 21
 updated: 2026-09-14
 
-softDeadline: 2026-10-1T23:59:00+08:00
-hardDeadline: 2026-10-11T23:59:00+08:00
+softDeadline: 2026-10-10T23:59:00+08:00
+hardDeadline: 2026-10-20T23:59:00+08:00
 points: 100
 status: 进行中
 
@@ -17,8 +17,8 @@ zipLabel: 实验代码下载
 
 ## 截止时间
 
-> softDeadline: **2026年10月1日（周四）晚上 23:59**
-> hardDeadline: **2026年10月11日（周日）晚上 23:59**
+> softDeadline: **2026年10月10日（周六）晚上 23:59**
+> hardDeadline: **2026年10月20日（周二）晚上 23:59**
 
 ----
 
