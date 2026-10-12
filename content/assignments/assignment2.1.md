@@ -2,7 +2,10 @@
 title: Assignment-2.1：实现 Transformer Block 与语言模型
 summary: 实现 RMSNorm、SwiGLU、RoPE 和因果注意力，组装 Transformer Block 与完整语言模型，并分析单个 Block 的资源开销。
 order: 22
-updated: 2026-10-09
+updated: 2026-10-12
+
+softDeadline: 2026-11-05T23:59:00+08:00
+hardDeadline: 2026-11-20T23:59:00+08:00
 points: 100
 status: 进行中
 zipUrl: files/packages/assignment_2_1.zip
@@ -16,9 +19,8 @@ Assignment-2 分为两个部分：在Assignment-2.1中，我们将会实现一�
 
 ## 截止时间
 
-> Soft Deadline：
->
-> Hard Deadline： 
+> softDeadline: **2026年11月5日（周四）晚上 23:59**
+> hardDeadline: **2026年11月20日（周五）晚上 23:59**
 
 ## 分数分布
 
@@ -91,11 +93,11 @@ python -m pytest -q
 
 线性层均无 bias，两个 RMSNorm 各有一组可训练缩放参数。
 
-### 参数量（4 分）
+### 参数量
 
 计算给定配置下一个 Block 的可训练参数量，在报告中说明统计范围与各项来源。
 
-### 前向计算量（6 分）
+### 前向计算量
 
 1. 输入长度为 1 时，列出主要矩阵乘法的形状和 FLOPs，并求总量。
 2. 输入长度为 `n` 时，用 `n`、`d`（`d_model`）、`d_ff` 写出各项计算量与总量；代入 `n=16` 和给定配置。
@@ -113,7 +115,7 @@ python -m pytest -q
 
 报告保存为 `学号_report.pdf`，包含：
 
-1. 基础实验过程的简要说明与 9 个测试的运行结果。
+1. 基础实验过程的简要说明和记录。
 2. Resource Accounting的分析和结果。
 3. （可选）对课堂实验的评价或改进建议。
 
@@ -143,8 +145,14 @@ assignment_2_1/
 
 压缩后命名为 **`学号_assignment2_1.zip`**。
 
+将压缩文件提交至[https://box.nju.edu.cn/u/d/a4d1e3e449f9454b8d58/](https://box.nju.edu.cn/u/d/a4d1e3e449f9454b8d58/)。
+
+## 成绩查询
+
+[查询个人成绩](https://table.nju.edu.cn/dtable/links/a0e501c5caf44b71b423)
+
 ## 提醒
 
 - 不要将虚拟环境、缓存或无关文件打包提交。
 - 个人答案不得上传到公开仓库。
-- 保存完成的内层模型包，供 Ass2.2 使用。
+- 你在2.1中完成的部分，将会在作业2.2中复用
