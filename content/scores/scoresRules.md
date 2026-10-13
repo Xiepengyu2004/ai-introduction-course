@@ -2,7 +2,7 @@
 title: 评分规则与成绩查询
 summary: 查看作业评分结构、复核流程和安全的成绩查询方式。
 order: 30
-updated: 2026-09-02
+updated: 2026-10-12
 
 zipUrl: files/packages/Report_Template.zip
 zipLabel: 实验报告Latex模板
@@ -48,6 +48,7 @@ zipLabel: 实验报告Latex模板
   * [1.1](https://box.nju.edu.cn/u/d/3334549139d94e348580/)
   * [1.2](https://box.nju.edu.cn/u/d/5f8be2351b8949079e75/)
 * Assignment2
+  * [2.1](https://box.nju.edu.cn/u/d/a4d1e3e449f9454b8d58/)
 * Assignment3
 
 ## 查询个人成绩
@@ -62,6 +63,8 @@ zipLabel: 实验报告Latex模板
   - [基础实验](https://table.nju.edu.cn/dtable/links/c8aaa6680f744b15a00b)
   - [探究实验]()
   - [总分]()
+- Assignment_2_1:
+  - [成绩查询](https://table.nju.edu.cn/dtable/links/a0e501c5caf44b71b423)
 
 ## 申请复核
 
