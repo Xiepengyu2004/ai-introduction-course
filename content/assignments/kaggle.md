@@ -7,6 +7,7 @@ points: 100
 status: 进行中
 ---
 
+# Kaggle RSNA竞赛
 
 ## 分值构成
 
@@ -17,13 +18,17 @@ status: 进行中
 
 提交链接：https://box.nju.edu.cn/u/d/fbe0b2df96624154950f/
 
-需要将实验报告和实验代码（**务必不要包括完整的数据集**）上传到上述链接 ，其中必须要有实验报告和实现代码，建议要有最后的输出结果（也就是`submissions.csv`文件）
+请将下面材料上传至上述链接：
+- 实验报告（PDF格式）
+- 实验代码（**注意不要把整数据上传了**）
+- 最终预测结果文件 `submissions.csv`
 
-对于没能及时注册比赛、或者在DDL前提交，但是没有获得测评结果（例如，kaggle测评系统有时测评排队较久）的同学，如在DDL前最后预测结果（`submissions.csv`）和相关代码，以及实验报告上传到上述Box云盘同样可以获得最后的有效成绩
+对于未能及时注册比赛，或已在截止时间前提交预测结果但未获得测评成绩（比如因为Kaggle测评排队等原因）的同学，只要在截止时间前将上述三项材料上传至Box云盘，也可视为有效提交。
 
-```
+```text
 assignment_1_2/
-├── submissions.csv # must if you don't have grades on kaggle ; optional but suggested if you have grade on public leaderboard
-├── your codes #  same with submissions.csv
-└── 学号_report.pdf # must 
+├── submissions.csv  # 必交：最终预测结果
+├── code/            # 必交：实验代码，不含完整数据集
+└── 学号_report.pdf   # 必交：实验报告
 ```
+
