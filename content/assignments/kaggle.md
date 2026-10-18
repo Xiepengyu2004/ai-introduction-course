@@ -2,12 +2,18 @@
 title: Kaggle竞赛
 summary: Kaggle竞赛提交链接
 order: 22
+softDeadline: 2026-10-22T23:59:00+08:00
+hardDeadline: 2026-10-22T23:59:00+08:00
 updated: 2026-10-18
 points: 100
 status: 进行中
 ---
 
 # Kaggle RSNA竞赛
+
+## DDLs
+
+以Kaggle平台上的截止时间为准（10月22日）
 
 ## 分值构成
 
