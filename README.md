@@ -23,11 +23,13 @@ npm run dev
 ## 构建
 
 ```bash
-npm run build
-npm run preview
+npm run build:pages
+npm run preview -- --mode github-pages
 ```
 
 生成的网站位于 `dist/`。资源使用相对路径、页面使用 hash 路由，因此既支持用户主页仓库，也支持普通项目仓库的 GitHub Pages 子路径。
+
+GitHub Actions 使用 `npm run build:pages`，该模式禁用 Cloudflare 插件。`npm run build` 和 `npm run deploy` 保留 Cloudflare 构建与部署，产物位于 `.cloudflare/output/`。
 
 ## 部署到 GitHub Pages
 

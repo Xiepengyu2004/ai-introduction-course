@@ -3,11 +3,12 @@ import react from '@vitejs/plugin-react';
 
 import { cloudflare } from "@cloudflare/vite-plugin";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: './',
-  plugins: [react(), cloudflare()],
+  // GitHub Pages needs a plain static build in dist, not Cloudflare's output layout.
+  plugins: [react(), mode !== 'github-pages' && cloudflare()],
   build: {
     outDir: 'dist',
     sourcemap: true,
   },
-});
+}));
