@@ -9,6 +9,7 @@
     "content": "node scripts/generate-content.mjs",
     "dev": "npm run content && vite",
     "build": "npm run content && tsc --noEmit && vite build",
+    "build:pages": "npm run build -- --mode github-pages",
     "preview": "vite preview",
     "lint": "oxlint src scripts",
     "format": "oxfmt src scripts content README.md CONTENT_GUIDE.md",
