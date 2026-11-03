@@ -2,7 +2,7 @@
 title: 评分规则与成绩查询
 summary: 查看作业评分结构、复核流程和安全的成绩查询方式。
 order: 30
-updated: 2026-10-12
+updated: 2026-11-03
 
 zipUrl: files/packages/Report_Template.zip
 zipLabel: 实验报告Latex模板
@@ -53,18 +53,28 @@ zipLabel: 实验报告Latex模板
 
 ## 查询个人成绩
 
-为了保护学生的隐私，分数统计结果将在课程主页发布对应的**NJU Table**链接。（下面分数是通过提交时间加权后的分数）
+为了保护学生的隐私，成绩只在**NJU Table**中发布。所有作业统一使用下面的入口，Assignment 1.1、1.2、2.1 以及之后作业的成绩都在这里查看。
+
+[作业成绩查询](https://table.nju.edu.cn/external-apps/169f9563-4f55-4709-ba46-c01be0a755b5/)
+
+表中分数是通过提交时间加权后的分数。
+
+### 旧链接（已废弃）
+
+以下按作业分别发布的 dtable 链接已废弃（deprecated），不再更新，仅保留以便核对历史成绩，请优先使用上面的统一入口。
 
 - Assignment_1_1:
-  - [基础实验](https://table.nju.edu.cn/dtable/links/7165467e178f424583ac)
+  - [基础实验](https://table.nju.edu.cn/dtable/links/7165467e178f424583ac)（已废弃）
   - [探究实验]()
   - [总分]()
 - Assignment_1_2:
-  - [基础实验](https://table.nju.edu.cn/dtable/links/c8aaa6680f744b15a00b)
+  - [基础实验](https://table.nju.edu.cn/dtable/links/c8aaa6680f744b15a00b)（已废弃）
   - [探究实验]()
   - [总分]()
 - Assignment_2_1:
-  - [成绩查询](https://table.nju.edu.cn/dtable/links/a0e501c5caf44b71b423)
+  - [成绩查询](https://table.nju.edu.cn/dtable/links/a0e501c5caf44b71b423)（已废弃）
+
+在新旧系统迁移的过程中，我们对旧提交重新进行了测评，部分同学的成绩会有变动，如有异议请联系助教。
 
 ## 申请复核
 
