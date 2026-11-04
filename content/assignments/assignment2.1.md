@@ -2,8 +2,7 @@
 title: Assignment-2.1：实现 Transformer Block 与语言模型
 summary: 实现 RMSNorm、SwiGLU、RoPE 和因果注意力，组装 Transformer Block 与完整语言模型，并分析单个 Block 的资源开销。
 order: 22
-updated: 2026-10-12
-
+updated: 2026-11-03
 softDeadline: 2026-11-05T23:59:00+08:00
 hardDeadline: 2026-11-20T23:59:00+08:00
 points: 100
@@ -119,6 +118,17 @@ python -m pytest -q
 2. Resource Accounting的分析和结果。
 3. （可选）对课堂实验的评价或改进建议。
 
+## Final：完整测试
+
+运行下面的 Cell 完成所有的测试用例：
+
+```python
+result = subprocess.run([sys.executable, "-m", "pytest", "-q", "--tb=short"], cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print(result.stdout)
+result.check_returncode()
+```
+
+注意：OJ 端还包含一些其他的测试用例，目前已经公开在课程网站。如果本地测试通过但是 OJ 被扣分，可以下载 [test_edges.py](files/packages/test_edges.py)，放在 `tests/` 下运行测试，帮助定位错误。
 
 ## 提交方式
 
@@ -149,7 +159,9 @@ assignment_2_1/
 
 ## 成绩查询
 
-[查询个人成绩](https://table.nju.edu.cn/dtable/links/a0e501c5caf44b71b423)
+[查询个人成绩](https://table.nju.edu.cn/external-apps/169f9563-4f55-4709-ba46-c01be0a755b5/)
+
+所有作业的成绩都在这个页面查看。旧的 dtable 链接已废弃，仍保留在[成绩查询页面](#/scores/scoresRules)备查。
 
 ## 提醒
 
