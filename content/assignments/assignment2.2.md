@@ -8,7 +8,7 @@ softDeadline:
 hardDeadline: 
 points: 100
 status: 进行中
-zipUrl: files/packages/assignment_2_2.zip
+zipUrl: files/packages/assignment2_2.zip
 zipLabel: 实验代码下载
 ---
 # Assignment-2.2：训练 Transformer LM（选做，不计分）
