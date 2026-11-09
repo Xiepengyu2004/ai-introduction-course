@@ -245,7 +245,16 @@ Build Track 适合希望把 AI 技术做成实际应用的同学。项目应包�
 
 报告不能只记录开发步骤。Research Track 需要解释实验结果，Build Track 也需要提供可验证的测试、案例或用户反馈。
 
-## 提交目录建议
+## 提交方式
+
+请将各阶段要求提交的材料打包为 ZIP 文件，上传至[提交链接](https://box.nju.edu.cn/u/d/a208bbfc55af46e1bf59)。请按照以下规则命名，`学号`替换为本人学号：
+
+- Proposal：`proposal_学号.zip`
+- Milestone：`milestone_学号.zip`
+- 路演准备材料：`presentation_学号.zip`
+- 最终归档材料：`final_学号.zip`
+
+## 最终归档目录建议
 
 ```text
 final_project_学号/
