@@ -207,7 +207,7 @@ Build Track 适合希望把 AI 技术做成实际应用的同学。项目应包�
 | 时间 | 阶段 | 主要任务 | 提交与检查节点 |
 | --- | --- | --- | --- |
 | **11 月 3 日** | 项目正式发布 | 发布项目说明、推荐题目、评分原则和文档模板；开放 Track 和个人选题登记；开始调研并评估项目可行性。 | 无 |
-| **11 月 3 日—11 月 9 日** | 个人选题 | 确定 Research Track 或 Build Track；确定个人暂定题目和计划完成范围；自选题应尽早确认范围，避免项目过大。 | **11 月 9 日前：完成 Track 和个人题目信息登记。** |
+| **11 月 3 日—11 月 9 日** | 个人选题 | 确定 Research Track 或 Build Track；确定个人暂定题目和计划完成范围；自选题应尽早确认范围，避免项目过大。 | 准备好选题 |
 | **11 月 10 日—11 月 16 日** | Project Proposal | **Research Track：**确定研究问题，调研相关工作，选择 baseline、数据集、评价指标并制定实验计划。<br>**Build Track：**确定用户场景、核心功能、AI 技术方案、系统结构和 MVP 开发计划。<br>Proposal 应包含项目背景与问题、目标、技术或实验方案、个人时间安排、预期成果、资源需求和主要风险。 | **11 月 16 日 23:59：提交 Project Proposal（1–2 页）。** |
 | **11 月 17 日—11 月 23 日** | Baseline / MVP 开发 | **Research Track：**配置数据与环境，复现 baseline，运行第一组有效实验。<br>**Build Track：**完成核心 AI 模块，打通输入、处理和输出的最小流程。<br>保留实验日志、代码版本和问题记录。 | 本阶段不要求正式提交。 |
 | **11 月 24 日—11 月 30 日** | Milestone | **Research Track：**展示 baseline、初步实验结果、当前发现和下一阶段实验计划。<br>**Build Track：**展示可运行的 MVP、核心功能流程、当前测试结果和后续改进计划。<br>Milestone 应包含已完成内容、初步结果或截图、当前问题、相对 Proposal 的调整和 12 月计划。 | **11 月 30 日 23:59：提交 Milestone Report（2–3 页）及初步结果或 Prototype Demo。** |
@@ -249,10 +249,10 @@ Build Track 适合希望把 AI 技术做成实际应用的同学。项目应包�
 
 请将各阶段要求提交的材料打包为 ZIP 文件，上传至[提交链接](https://box.nju.edu.cn/u/d/a208bbfc55af46e1bf59)。请按照以下规则命名，`学号`替换为本人学号：
 
-- Proposal：`proposal_学号.zip`
-- Milestone：`milestone_学号.zip`
-- 路演准备材料：`presentation_学号.zip`
-- 最终归档材料：`final_学号.zip`
+- Proposal：`学号_proposal.zip`
+- Milestone：`学号_milestone.zip`
+- 路演准备材料：`学号_presentation.zip`
+- 最终归档材料：`学号_final.zip`
 
 ## 最终归档目录建议
 
