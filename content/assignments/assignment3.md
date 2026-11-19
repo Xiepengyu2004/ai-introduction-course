@@ -19,9 +19,9 @@ zipLabel: 实验代码下载
 
 ## 截止时间
 
-> softDeadline：**待公布**
+> softDeadline：2026-12-10 23:59:00 +0800
 >
-> hardDeadline：**待公布**
+> hardDeadline：2026-12-20 23:59:00 +0800
 
 正式发布时，请在本文开头的 YAML 中补充 `softDeadline`、`hardDeadline` 字段（例如 `2026-11-30T23:59:00+08:00`），以启用首页倒计时和作业日历。
 
@@ -29,9 +29,9 @@ zipLabel: 实验代码下载
 
 | 部分 | 内容 |分值 |
 | --- | --- | ---: |
-| 基础实验 1（DDPM） | 噪声预测网络、调度器、扩散过程、训练及生成评估 | 30 |
-| 基础实验 2（DDIM） | DDIM 反向采样、生成评估 | 30 |
-| 实验报告 | 独立完成的实验分析与思考 | 40 |
+| 基础实验 1（DDPM） | 噪声预测网络、调度器、扩散过程、训练及生成评估 | 40 |
+| 基础实验 2（DDIM） | DDIM 反向采样、生成评估 | 40 |
+| 实验报告 | 独立完成的实验分析与思考 | 20 |
 | **合计** | | **60** |
 
 ## 环境设置
@@ -142,7 +142,8 @@ assignment_3/
 
 建议将压缩包命名为 **`学号_assignment3.zip`**。
 
-> 提交地址：**待公布**。
+> 提交地址：[https://box.nju.edu.cn/u/d/a927a77a89fc41b5830d/](https://box.nju.edu.cn/u/d/a927a77a89fc41b5830d/)
+> 成绩查询：[https://table.nju.edu.cn/external-apps/169f9563-4f55-4709-ba46-c01be0a755b5/](https://table.nju.edu.cn/external-apps/169f9563-4f55-4709-ba46-c01be0a755b5/)
 
 ## 提醒
 
